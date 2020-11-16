@@ -12,7 +12,7 @@ const MobileNav: React.FC<Props> = ({ show, onClick }) => {
     <Container>
       <Ul>
         <IconContainer>
-          <Icon onClick={onClick} src={MenuIcon}></Icon>
+          <Icon onClick={onClick} src={MenuIcon} alt="Ícone menu"></Icon>
         </IconContainer>
         <Li show={show}>
           <LinkItem
