@@ -26,6 +26,7 @@
     "typeface-lato": "^1.1.13"
   },
   "devDependencies": {
+    "@types/react-helmet": "^6.1.0",
     "@types/react-scroll": "^1.8.2",
     "@types/styled-components": "^5.1.4",
     "@typescript-eslint/eslint-plugin": "^4.6.1",

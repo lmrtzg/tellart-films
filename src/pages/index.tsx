@@ -14,6 +14,7 @@ import VideoPlayer from '../components/VideoPlayer/index';
 import RegularNav from '../components/Navigation/RegularNav/index';
 import MobileNav from '../components/Navigation/MobileNav/index';
 import { Waypoint } from 'react-waypoint';
+import SEO from '../components/seo';
 
 const IndexPage: React.FC<{ data: any }> = ({ data }) => {
   const [isVideoOpen, changeVideoSate] = useState(false);
@@ -43,6 +44,7 @@ const IndexPage: React.FC<{ data: any }> = ({ data }) => {
 
   return (
     <>
+      <SEO />
       <GlobalStyle />
       {isVideoOpen ? (
         <Backdrop animate={isVideoOpen}>
