@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoints } from '../../globalStyles';
 
 export const Container = styled.footer`
   height: 100vh;
@@ -34,7 +35,7 @@ export const Email = styled.a`
 `;
 
 export const InstaIcon = styled.svg`
-  width: 8%;
+  width: 6vw;
   text-align: center;
   display: block;
   margin: 0 auto;
@@ -42,6 +43,14 @@ export const InstaIcon = styled.svg`
 
   &:hover {
     fill: var(--yellow);
+  }
+
+  @media (min-width: ${breakpoints.lg}) {
+    width: 4vw;
+  }
+
+  @media (min-width: ${breakpoints.xl}) {
+    width: 3vw;
   }
 `;
 
