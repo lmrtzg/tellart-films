@@ -4,7 +4,7 @@ import MenuIcon from '../../../images/MenuIcon.svg';
 
 interface Props {
   show: boolean;
-  onClick(): any;
+  onClick: (event: React.MouseEvent<HTMLImageElement>) => void;
 }
 
 const MobileNav: React.FC<Props> = ({ show, onClick }) => {

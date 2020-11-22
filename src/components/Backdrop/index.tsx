@@ -3,7 +3,7 @@ import Container from './style';
 
 interface Props {
   animate: boolean;
-  children: React.ReactChild;
+  children: React.ReactNode;
 }
 
 const Backdrop: React.FC<Props> = ({ animate, children }) => (

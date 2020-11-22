@@ -5,7 +5,7 @@ import LoadingSpinner from '../UI/LoadingSpinner/index';
 
 interface Props {
   link: string;
-  onClose(): any;
+  onClose: (event: React.MouseEvent<HTMLImageElement>) => void;
 }
 
 const VideoPlayer: React.FC<Props> = ({ link, onClose }) => {
