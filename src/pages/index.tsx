@@ -28,7 +28,6 @@ const IndexPage: React.FC<{ data: any }> = ({ data }) => {
   };
 
   const openVideoPlayer = (link: string) => {
-    console.log(link);
     changeVideoLink(link);
     changeVideoSate(true);
   };
