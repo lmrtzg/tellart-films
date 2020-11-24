@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
 /**
  * SEO component that queries for data with
  *  Gatsby's useStaticQuery React hook
@@ -27,25 +26,25 @@ function SEO({ description, lang, meta, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
-  const defaultTitle = title || site.siteMetadata.title;
+
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={defaultTitle}
+      title={title}
       meta={[
-        {
-          name: 'google-site-verification',
-          content: 'SUNirZK4VMkp43U_rWOpp6yo7NMIIDSb0lmv24gQFM4',
-        },
         {
           name: `description`,
           content: metaDescription,
         },
         {
           property: `og:title`,
-          content: defaultTitle,
+          content: title,
+        },
+        {
+          name: 'google-site-verification',
+          content: 'SUNirZK4VMkp43U_rWOpp6yo7NMIIDSb0lmv24gQFM4',
         },
         {
           property: `og:description`,
@@ -65,7 +64,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: defaultTitle,
+          content: title,
         },
         {
           name: `twitter:description`,
@@ -77,16 +76,16 @@ function SEO({ description, lang, meta, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `pt-BR`,
+  lang: `en`,
   meta: [],
   description: ``,
 };
 
 SEO.propTypes = {
-  title: PropTypes.string,
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
+  title: PropTypes.string.isRequired,
 };
 
 export default SEO;

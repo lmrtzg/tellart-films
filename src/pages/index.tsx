@@ -43,7 +43,7 @@ const IndexPage: React.FC<{ data: any }> = ({ data }) => {
 
   return (
     <>
-      <SEO />
+      <SEO title="Tellart Films | Apaixonados por contar histórias." />
       <GlobalStyle />
       {isVideoOpen ? (
         <Backdrop animate={isVideoOpen}>
