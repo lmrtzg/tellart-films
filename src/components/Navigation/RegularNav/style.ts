@@ -20,7 +20,7 @@ export const Container = styled.nav<{ changed: boolean }>`
   justify-content: center;
   background-color: ${props =>
     props.changed ? 'rgba(0, 0, 0, 0.6)' : 'transparent'};
-  transition: 300ms;
+  transition: 200ms;
 
   @media (max-width: ${breakpoints.md}) {
     display: none;
