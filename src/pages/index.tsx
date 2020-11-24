@@ -20,7 +20,7 @@ const IndexPage: React.FC<{ data: any }> = ({ data }) => {
   const [isVideoOpen, changeVideoSate] = useState(false);
   const [videoLink, changeVideoLink] = useState('');
   const [MobileNavState, changeMobileNavSate] = useState(false);
-  const { ref, inView } = useInView();
+  const { ref, inView, entry } = useInView();
 
   const HandleMobileNavClick = () => {
     const rightState = !MobileNavState;
@@ -55,7 +55,7 @@ const IndexPage: React.FC<{ data: any }> = ({ data }) => {
       ) : null}
       <header>
         <MobileNav show={MobileNavState} onClick={HandleMobileNavClick} />
-        <RegularNav changed={!inView} />
+        <RegularNav changed={entry ? !inView : false} />
         <Observer ref={ref} />
         <HeroSection />
       </header>
