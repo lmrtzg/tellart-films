@@ -3,7 +3,7 @@ import 'typeface-lato';
 import 'typeface-courier-prime';
 import HeroSection from '../components/HeroSection/index';
 import WhatWeDo from '../components/WhatWeDo/index';
-import { GlobalStyle } from '../globalStyles';
+import { GlobalStyle, Observer } from '../globalStyles';
 import Portfolio from '../components/Portfolio';
 import { graphql } from 'gatsby';
 import PortfolioItems, { IPortfolioItems } from '../PorfolioItems';
@@ -13,14 +13,14 @@ import Backdrop from '../components/Backdrop/index';
 import VideoPlayer from '../components/VideoPlayer/index';
 import RegularNav from '../components/Navigation/RegularNav/index';
 import MobileNav from '../components/Navigation/MobileNav/index';
-import { Waypoint } from 'react-waypoint';
+import { useInView } from 'react-intersection-observer';
 import SEO from '../components/seo';
 
 const IndexPage: React.FC<{ data: any }> = ({ data }) => {
   const [isVideoOpen, changeVideoSate] = useState(false);
   const [videoLink, changeVideoLink] = useState('');
-  const [RegularNavState, changeRegularNavState] = useState(false);
   const [MobileNavState, changeMobileNavSate] = useState(false);
+  const { ref, inView } = useInView();
 
   const HandleMobileNavClick = () => {
     const rightState = !MobileNavState;
@@ -53,19 +53,18 @@ const IndexPage: React.FC<{ data: any }> = ({ data }) => {
           />
         </Backdrop>
       ) : null}
-      <MobileNav show={MobileNavState} onClick={HandleMobileNavClick} />
-      <RegularNav changed={RegularNavState} />
-      <Waypoint
-        onLeave={() => changeRegularNavState(true)}
-        onEnter={() => changeRegularNavState(false)}
-      />
-      <main>
+      <header>
+        <MobileNav show={MobileNavState} onClick={HandleMobileNavClick} />
+        <RegularNav changed={!inView} />
+        <Observer ref={ref} />
         <HeroSection />
+      </header>
+      <main>
         <WhatWeDo />
         <Portfolio onPortItemClick={openVideoPlayer} portItems={porItems} />
         <AboutUs />
-        <Contact />
       </main>
+      <Contact />
     </>
   );
 };
