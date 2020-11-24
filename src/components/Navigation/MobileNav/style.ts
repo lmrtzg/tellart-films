@@ -31,14 +31,17 @@ export const Container = styled.nav`
   }
 `;
 
-export const Ul = styled.ul`
+export const Ul = styled.ul<{ show: boolean }>`
   list-style: none;
   padding: 0.5rem 0;
   width: 90%;
+  max-height: ${props => (props.show ? '10rem' : '2.5rem')};
+  overflow: hidden;
+  transition: max-height 200ms ease-out;
 `;
 
-export const Li = styled.li<{ show: boolean }>`
-  display: ${props => (props.show ? 'block' : 'none')};
+export const Li = styled.li`
+  display: block;
   padding: 0.2rem 0;
 `;
 
@@ -56,6 +59,7 @@ export const IconContainer = styled.li`
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  height: 1.5rem;
 `;
 
 export const Icon = styled.img``;

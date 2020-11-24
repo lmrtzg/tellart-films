@@ -10,11 +10,11 @@ interface Props {
 const MobileNav: React.FC<Props> = ({ show, onClick }) => {
   return (
     <Container>
-      <Ul>
+      <Ul show={show}>
         <IconContainer>
           <Icon onClick={onClick} src={MenuIcon} alt="Ícone menu"></Icon>
         </IconContainer>
-        <Li show={show}>
+        <Li>
           <LinkItem
             activeClass="active"
             to="what-we-do"
@@ -25,7 +25,7 @@ const MobileNav: React.FC<Props> = ({ show, onClick }) => {
             O que fazemos
           </LinkItem>
         </Li>
-        <Li show={show}>
+        <Li>
           <LinkItem
             activeClass="active"
             to="portfolio"
@@ -36,7 +36,7 @@ const MobileNav: React.FC<Props> = ({ show, onClick }) => {
             Portfólio
           </LinkItem>
         </Li>
-        <Li show={show}>
+        <Li>
           <LinkItem
             activeClass="active"
             to="about-us"
@@ -47,7 +47,7 @@ const MobileNav: React.FC<Props> = ({ show, onClick }) => {
             Sobre nós
           </LinkItem>
         </Li>
-        <Li show={show}>
+        <Li>
           <LinkItem
             activeClass="active"
             to="contact"
