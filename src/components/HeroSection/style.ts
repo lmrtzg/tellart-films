@@ -8,18 +8,12 @@ export const Container = styled(BaseSection)`
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  display: grid;
+  place-items: center;
 `;
 
 export const LogoContainer = styled.div`
-  width: 25%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-
-  @media (max-width: ${breakpoints.sm}) {
-    width: 70%;
-  }
+  max-width: 325px;
 `;
 
 export const LogoText = styled.h1`

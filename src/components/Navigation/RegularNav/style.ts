@@ -44,7 +44,7 @@ export const Li = styled.li`
     content: '|';
     margin: 0 0.85em;
     color: var(--yellow);
-    font-size: calc(0.6rem + 0.5vw);
+    font-size: 1.2rem;
   }
 `;
 
@@ -52,8 +52,7 @@ export const LinkItem = styled(Link)<ScrollProps>`
   color: var(--yellow);
   cursor: pointer;
   text-transform: uppercase;
-  font-size: calc(0.6rem + 0.5vw);
-
+  font-size: 1.2rem;
   &:hover {
     color: white;
   }

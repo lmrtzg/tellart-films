@@ -3,6 +3,7 @@ import React from 'react';
 import Img from 'gatsby-image';
 import {
   Container,
+  Wrapper,
   Grid,
   Title,
   TitleUnderline,
@@ -45,7 +46,7 @@ const AboutUs: React.FC = () => {
   return (
     <Container id="about-us">
       <Grid>
-        <div>
+        <Wrapper>
           <Title>
             Sobre <TitleUnderline>nós</TitleUnderline>
           </Title>
@@ -63,7 +64,7 @@ const AboutUs: React.FC = () => {
             técnicas usadas no cinema com o intuito de fazer com que cada frame
             tenha um papel intensificador no que estamos contando.
           </Text>
-        </div>
+        </Wrapper>
         <Director>
           <Img
             fluid={carlotto.childImageSharp.fluid}

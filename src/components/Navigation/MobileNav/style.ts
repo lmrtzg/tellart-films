@@ -49,8 +49,8 @@ export const LinkItem = styled(Link)<ScrollProps>`
   color: var(--yellow);
   cursor: pointer;
   text-transform: uppercase;
-  font-size: calc(0.7rem + 0.5vw);
   text-align: center;
+  font-size: 0.9rem;
   display: block;
   padding: 0.2rem 0;
 `;

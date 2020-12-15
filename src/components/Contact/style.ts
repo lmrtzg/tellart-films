@@ -8,9 +8,8 @@ export const Container = styled.footer`
 `;
 
 export const ContainerFlex = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   height: 90%;
 `;
 
