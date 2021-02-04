@@ -32,7 +32,7 @@ const Contact: React.FC = () => (
         </a>
       </div>
     </ContainerFlex>
-    <MadeBy href="https://github.com/lmrtzg" target="_blank" rel="noreferrer">
+    <MadeBy href="https://lumertz.info/" target="_blank" rel="noreferrer">
       feito por gabriel lumertz
     </MadeBy>
   </Container>
