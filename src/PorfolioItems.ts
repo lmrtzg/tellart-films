@@ -70,6 +70,20 @@ const PortfolioItems: Array<IPortfolioItems> = [
     link:
       'https://player.vimeo.com/video/474005250?title=0&byline=0&portrait=0',
   },
+  {
+    name: 'port-10',
+    company: 'Sabores da Adri',
+    job: 'Conheça os Sabores da Adri',
+    link:
+      'https://player.vimeo.com/video/508486454?title=0&byline=0&portrait=0',
+  },
+  {
+    name: 'port-11',
+    company: 'Owell',
+    job: 'You Make Your Own Swell',
+    link:
+      'https://player.vimeo.com/video/508484178?title=0&byline=0&portrait=0',
+  },
 ];
 
 export default PortfolioItems;
