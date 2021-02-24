@@ -13,8 +13,8 @@ const Contact: React.FC = () => (
     <ContainerFlex>
       <div>
         <Title>Conte sua história</Title>
-        <Email href="mailto:contato@tellartfilms.com">
-          contato@tellartfilms.com
+        <Email href="mailto:tellartfilms@gmail.com">
+          tellartfilms@gmail.com
         </Email>
         <a
           href="https://www.instagram.com/tellartfilms/"
