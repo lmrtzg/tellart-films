@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import BaseSection from '../BaseStyles/index';
 import bg from '../../images/BG-1.jpg';
-import { breakpoints } from '../../globalStyles';
 
 export const Container = styled(BaseSection)`
   background-image: url(${bg});
