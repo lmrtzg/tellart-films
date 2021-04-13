@@ -10,6 +10,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
