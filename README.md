@@ -20,7 +20,7 @@ Instruções para rodar projeto localmente.
 
 1. Clone o repositório 
   ```sh
-  https://github.com/lmrtzg/tellart-films.git
+  https://github.com/gfmonego/tellart-films.git
   ```
 2. Instale as depêndencias
   ```sh
