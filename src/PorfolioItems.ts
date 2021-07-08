@@ -8,6 +8,20 @@ export interface IPortfolioItems {
 
 const PortfolioItems: Array<IPortfolioItems> = [
   {
+    name: 'port-11',
+    company: 'Owell',
+    job: 'Ad 2',
+    link:
+      'https://player.vimeo.com/video/572237201?title=0&byline=0&portrait=0',
+  },
+  {
+    name: 'port-10',
+    company: 'Parque Europa',
+    job: 'Parque Europa',
+    link:
+      'https://player.vimeo.com/video/572237201?title=0&byline=0&portrait=0',
+  },
+  {
     name: 'port-1',
     company: 'Draken',
     job: 'Arte em Mandeira',
