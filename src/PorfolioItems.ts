@@ -12,7 +12,7 @@ const PortfolioItems: Array<IPortfolioItems> = [
     company: 'Owell',
     job: 'Ad 2',
     link:
-      'https://player.vimeo.com/video/572237201?title=0&byline=0&portrait=0',
+      'https://player.vimeo.com/video/567569345?title=0&byline=0&portrait=0',
   },
   {
     name: 'port-10',
